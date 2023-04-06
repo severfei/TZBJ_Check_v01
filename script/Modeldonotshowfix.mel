@@ -1,0 +1,4 @@
+select -ne :initialShadingGroup;
+lockNode -l 0 -lu 0;
+select -ne :initialParticleSE;
+lockNode -l 0 -lu 0;
