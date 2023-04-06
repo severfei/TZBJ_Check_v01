@@ -1,0 +1,108 @@
+
+
+
+
+string $OBJ[]=`ls -sl`;
+
+for($i=0;$i<`size $OBJ`;$i++) 
+{
+
+
+
+        string $slectJT=$OBJ[$i];
+	string $roX=$slectJT + ".rotateX";
+        string $JOX=$slectJT + ".jointOrientX";
+        float $roXNO=`getAttr $roX`;
+        float $JOXNO=`getAttr $JOX`;
+        float $newJOXNO=$JOXNO + $roXNO;
+        setAttr $JOX $newJOXNO;
+        setAttr $roX 0;
+};
+
+
+
+
+string $OBJ[]=`ls -sl`;
+
+for($i=0;$i<`size $OBJ`;$i++) 
+{
+	string $slectJT=$OBJ[$i];
+	string $roY=$slectJT + ".rotateY";
+	string $JOY=$slectJT + ".jointOrientY";
+	float $roYNO=`getAttr $roY`;
+	float $JOYNO=`getAttr $JOY`;
+	float $newJOYNO=$JOYNO + $roYNO;
+	setAttr $JOY $newJOYNO;
+	setAttr $roY 0;
+};
+
+
+
+
+
+string $OBJ[]=`ls -sl`;
+
+for($i=0;$i<`size $OBJ`;$i++) 
+{
+
+
+       string $slectJT=$OBJ[$i];
+       string $roZ=$slectJT + ".rotateZ";
+       string $JOZ=$slectJT + ".jointOrientZ";
+       float $roZNO=`getAttr $roZ`;
+       float $JOZNO=`getAttr $JOZ`;
+       float $newJOZNO=$JOZNO + $roZNO;
+       setAttr $JOZ $newJOZNO;
+       setAttr $roZ 0;
+};
+
+
+string $OBJ[]=`ls -sl`;
+
+for($i=0;$i<`size $OBJ`;$i++) 
+{
+
+
+
+        string $slectJT=$OBJ[$i];
+	string $roX=$slectJT + ".rotateX";
+        string $JOX=$slectJT + ".jointOrientX";
+        float $roXNO=`getAttr $roX`;
+        float $JOXNO=`getAttr $JOX`;
+        float $newJOXNO=$JOXNO - $roXNO;
+        setAttr $JOX $newJOXNO;
+        setAttr $roX 0;
+};
+
+
+
+string $OBJ[]=`ls -sl`;
+
+for($i=0;$i<`size $OBJ`;$i++) 
+{
+	string $slectJT=$OBJ[$i];
+	string $roY=$slectJT + ".rotateY";
+	string $JOY=$slectJT + ".jointOrientY";
+	float $roYNO=`getAttr $roY`;
+	float $JOYNO=`getAttr $JOY`;
+	float $newJOYNO=$JOYNO - $roYNO;
+	setAttr $JOY $newJOYNO;
+	setAttr $roY 0;
+};
+
+
+string $OBJ[]=`ls -sl`;
+
+for($i=0;$i<`size $OBJ`;$i++) 
+{
+
+
+       string $slectJT=$OBJ[$i];
+       string $roZ=$slectJT + ".rotateZ";
+       string $JOZ=$slectJT + ".jointOrientZ";
+       float $roZNO=`getAttr $roZ`;
+       float $JOZNO=`getAttr $JOZ`;
+       float $newJOZNO=$JOZNO - $roZNO;
+       setAttr $JOZ $newJOZNO;
+       setAttr $roZ 0;
+};
